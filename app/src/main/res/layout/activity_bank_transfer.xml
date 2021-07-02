@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BankTransfer">
+
+    <TextView
+        android:id="@+id/txt_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/themeColor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Select Bank"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:gravity="center|left"
+        android:padding="20dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txt_toolbar"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+
+        <Button
+            android:id="@+id/btn_BPI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#29756c"
+            android:layout_margin="20dp"
+            android:text="Dutch Bangla bank"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            />
+
+        <Button
+            android:id="@+id/btn_chinaBank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#29756c"
+            android:layout_margin="20dp"
+            android:text="City bank"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            />
+
+        <Button
+            android:id="@+id/btn_metroBank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#29756c"
+            android:layout_margin="20dp"
+            android:text="EBL bank"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            />
+
+        <Button
+            android:id="@+id/btn_palawan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#29756c"
+            android:layout_margin="20dp"
+            android:text="Ab bank"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

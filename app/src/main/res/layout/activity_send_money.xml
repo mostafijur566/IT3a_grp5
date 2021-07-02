@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SendMoney">
+
+    <TextView
+        android:id="@+id/txt_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/themeColor"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:gravity="center"
+        android:text="Send Money"
+        android:padding="18dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/test"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Account Number:"
+            android:gravity="left"
+            android:textSize="20sp"
+            android:textColor="#000"
+            />
+
+        <EditText
+            android:id="@+id/txt_accountNumber"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:inputType="numberDecimal"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Account Name:"
+            android:gravity="left"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginTop="20dp"
+            />
+
+        <EditText
+            android:id="@+id/txt_accountName"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:inputType="text"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Amount:"
+            android:gravity="left"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginTop="20dp"
+            />
+
+        <EditText
+            android:id="@+id/txt_amount"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:inputType="numberDecimal"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            />
+
+        <Button
+            android:id="@+id/btn_sendMoney"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Send Money"
+            android:textAllCaps="false"
+            android:layout_marginTop="60dp"
+            android:textSize="20sp"
+            android:background="@drawable/round_button"
+            android:textColor="#fff"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountActivity">
+
+    <TextView
+        android:id="@+id/txt_userid"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/themeColor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:gravity="center"
+        android:padding="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txt_userid"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/txt_amount"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:text="0"
+            android:background="@drawable/round_button"
+            android:textColor="#fff"
+            android:padding="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Balance"
+            android:textSize="20sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            >
+
+            <Button
+                android:id="@+id/btn_cashIn"
+                android:layout_width="150dp"
+                android:layout_height="130dp"
+                android:drawableTop="@drawable/ic_baseline_attach_money_24"
+                android:text="Bill Pay"
+                android:textAllCaps="false"
+                android:background="#29756c"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:layout_margin="10dp"
+                />
+
+            <Button
+                android:id="@+id/btn_sendMoney"
+                android:layout_width="150dp"
+                android:layout_height="130dp"
+                android:drawableTop="@drawable/ic_baseline_money_off_24"
+                android:text="Send Money"
+                android:textAllCaps="false"
+                android:background="#29756c"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:layout_margin="10dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/btn_bankTransfer"
+                android:layout_width="150dp"
+                android:layout_height="130dp"
+                android:drawableTop="@drawable/ic_baseline_money_24"
+                android:text="Bank Transfer"
+                android:textAllCaps="false"
+                android:background="#29756c"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:layout_margin="10dp"
+                />
+
+            <Button
+                android:id="@+id/btn_transactionHistory"
+                android:layout_width="150dp"
+                android:layout_height="130dp"
+                android:drawableTop="@drawable/ic_baseline_history_24"
+                android:text="Transaction History"
+                android:textAllCaps="false"
+                android:background="#29756c"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:layout_margin="10dp"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:src="@drawable/edubank1"
+            android:layout_marginTop="20dp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
